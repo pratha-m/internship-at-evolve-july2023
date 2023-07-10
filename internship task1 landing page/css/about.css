@@ -1,0 +1,76 @@
+.about{
+    height: 70vh;
+    display:flex;
+    flex-direction: column;
+    padding: 30px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;   
+}
+.about>.aboutUsHead{
+    width: 100%;
+    height: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 50px;
+}
+.about>.aboutUsMainContent{
+    height: 80%;
+    display: flex;
+}
+.about>.aboutUsMainContent>.aboutUsImage{
+    height: 90%;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.about>.aboutUsMainContent>.aboutUsImage>img{
+    width: 80%;
+    height: 100%;
+    border-radius: 30px;
+}
+.about>.aboutUsMainContent>.aboutUsTextContent{
+    margin-top: 60px;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.about>.aboutUsMainContent>.aboutUsTextContent>p{
+    margin-top: 30px;
+}
+.about>.aboutUsMainContent>.aboutUsTextContent>.socialLinks{
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.about>.aboutUsMainContent>.aboutUsTextContent>.socialLinks>ul{
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+}
+.about>.aboutUsMainContent>.aboutUsTextContent>.socialLinks>ul>li{
+    height: 40px;
+    width: 40px;
+    background-color:white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    border: 1px solid gray;
+    cursor: pointer;
+    margin-left: 20px;
+}
+.about>.aboutUsMainContent>.aboutUsTextContent>.socialLinks>.eachSocialLink{
+    transition: all 2s;
+}
+.about>.aboutUsMainContent>.aboutUsTextContent>.socialLinks>ul>li:hover .eachSocialLink{
+    transform: translateY(-5px) translateX(3px);
+}
+.about>.aboutUsMainContent>.aboutUsTextContent>.socialLinks>ul>li:hover .eachSocialLink>i{
+    color: white;
+}
+.about>.aboutUsMainContent>.aboutUsTextContent>.socialLinks>ul>li:hover{
+    background-color: #a8a8c5e6;
+}
