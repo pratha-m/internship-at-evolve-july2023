@@ -1,37 +1,56 @@
-.about{
+.about,.contact{
     height: 70vh;
     display:flex;
     flex-direction: column;
-    padding: 30px;
+    padding: 45px;
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;   
+    padding-bottom: 0px;
 }
-.about>.aboutUsHead{
+.about>.aboutUsHead,
+.contact>.contactPageHead{
     width: 100%;
     height: 20%;
     display: flex;
     align-items: center;
     justify-content: center;
     font-size: 50px;
+    font-weight: 900;
 }
-.about>.aboutUsMainContent{
+.about>.aboutUsHead>span,
+.contact>.contactPageHead>span{
+    color: orange;
+    margin-left: 15px;
+}
+.about>.aboutUsMainContent,
+.contact>.contactPageMain{
     height: 80%;
     display: flex;
-}
-.about>.aboutUsMainContent>.aboutUsImage{
-    height: 90%;
-    width: 50%;
-    display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-around;
 }
-.about>.aboutUsMainContent>.aboutUsImage>img{
+.about>.aboutUsMainContent>.aboutUsImage,
+.contact>.contactPageMain>.contactPageImage{
+    height: 70%;
+    width: 45%;
+    /* display: flex;
+    align-items: center;
+    justify-content: center; */
+    background-image:linear-gradient(30deg,#3228289c,rgba(86, 14, 14, 0.762)),url("../images/about.jpg");
+    background-repeat: no-repeat; 
+    background-position:center;
+    background-size: cover;
+    border-radius: 10px;
+}
+.about>.aboutUsMainContent>.aboutUsImage>img,
+.contact>.contactPageMain>.contactPageImage>img{
     width: 80%;
     height: 100%;
     border-radius: 30px;
 }
-.about>.aboutUsMainContent>.aboutUsTextContent{
-    margin-top: 60px;
-    width: 50%;
+.about>.aboutUsMainContent>.aboutUsTextContent,
+.contact>.contactPageMain>.contactPageTextContent{
+    /* margin-top: 60px; */
+    width: 45%;
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -74,3 +93,27 @@
 .about>.aboutUsMainContent>.aboutUsTextContent>.socialLinks>ul>li:hover{
     background-color: #a8a8c5e6;
 }
+@media screen and (max-width:700px) {
+    .about,
+    .contact{
+        height: max-content;
+    }
+    .about>.aboutUsMainContent,
+    .contact>.contactPageMain{
+        flex-direction: column;
+        padding: 30px;
+    }  
+    .about>.aboutUsMainContent>.aboutUsImage,
+    .contact>.contactPageMain>.contactPageImage{
+        width: 100%;
+        height: 300px;
+    }
+    .about>.aboutUsMainContent>.aboutUsTextContent,
+    .contact>.contactPageMain>.contactPageTextContent{
+        height: 40%;
+        width: 100%;
+    }
+    .about>.aboutUsMainContent>.aboutUsTextContent>.socialLinks{
+        margin-top: 15px;
+    }
+} 

@@ -8,12 +8,14 @@
     <link rel="stylesheet" href="./css/navbar.css">
     <link rel="stylesheet" href="./css/footer.css">
     <link rel="stylesheet" href="./css/about.css">
+    <link rel="stylesheet" href="./css/pricing.css">
+    <link rel="stylesheet" href="./css/contact.css">
     <script src="https://kit.fontawesome.com/ae82594478.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <!-- Navbar  -->
     <input type="checkbox" id="expand-toggler">
-    <header>
+    <header class="header">
         <div class="logoContainer"><a href="/">Landing Page</a></div>
         <label for="expand-toggler" id="expand-btn">
             <i class="fa fa-solid fa-bars" id="burger-icon"></i>
@@ -21,16 +23,16 @@
         </label>
         <nav>
             <ul>
-                <li><a href="/">Home</a></li>
-                <li><a href="/">About</a></li>
-                <li><a href="/">Pricing</a></li>
-                <li><a href="/">Contact</a></li>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#pricing">Pricing</a></li>
+                <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>  
     </header>
 
     <!-- Section1 Home Section -->
-    <section class="home">
+    <section class="home" id="home">
         <div class="homeSectionContent">
             <div class="homeHeading">Landing <span>Page</span></div>
             <div class="homeContent">A landing page is a webpage designed to persuade users to take one specific action. For example, having users sign up for a newsletter, purchase a product, or RSVP for an event.</div>
@@ -39,16 +41,18 @@
     </section>
 
     <!-- Section2 About Section -->
-    <section class="about">
-         <div class="aboutUsHead">About Us</div>
+    <section class="about" id="about">
+         <div class="aboutUsHead">About <span>Us</span></div>
          <div class="aboutUsMainContent">
-            <div class="aboutUsImage"><img src="./images/about.jpg" alt=""></div>
+            <div class="aboutUsImage">
+                <!-- <img src="./images/about.jpg" alt=""> -->
+            </div>
             <div class="aboutUsTextContent">
                 <p>
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti accusamus magni 
                     odit harum ullam neque,voluptates voluptatibus eaque sunt repellendus.
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti accusamus 
-                    magni odit harum ullam neque, voluptates voluptatibus eaque sunt repellendus.
+                    
                 </p>
                 <span class="socialLinks">
                     <ul>
@@ -64,45 +68,65 @@
     </section>
 
     <!-- Section3 Pricing Section -->
-    <section class="pricingPage">
-        <div class="pricingPageHeading">Our Pricing</div>
+    <section class="pricingPage" id="pricing">
+        <div class="pricingPageHeading">Our <span>Pricing</span></div>
         <div class="pricingBoxes">
            <div class="pricingBox basicPricingBox">
             <div class="pricingBoxHead">Basic</div>
-            <div class="pricingBoxPrice">$9.99 / year</div>
+            <div class="pricingBoxPrice">$9.99</div>
             <div class="pricingBoxItems">
-              <div class="pricingBoxStorage">10GB Storage</div>
-              <div class="pricingBoxEmails">10 Emails</div>
-              <div class="pricingBoxDomains">10 Domains</div>
-              <div class="pricingBoxBandwidth">1GB Bandwidth</div>
+              <div class="pricingBoxStorage pricingBoxItem">10GB Storage</div>
+              <div class="pricingBoxEmails pricingBoxItem">10 Emails</div>
+              <div class="pricingBoxDomains pricingBoxItem">10 Domains</div>
+              <div class="pricingBoxBandwidth pricingBoxItem">1GB Bandwidth</div>
+              <div class="pricingBoxButton pricingBoxItem">
+                <button class="pricingBtn">Enroll Now</button>
+            </div>
             </div>
            </div>
            <div class="pricingBox proPricingBox">
             <div class="pricingBoxHead">Pro</div>
-            <div class="pricingBoxPrice">$20 / year</div>
+            <div class="pricingBoxPrice">$20</div>
             <div class="pricingBoxItems">
-                <div class="pricingBoxStorage">100GB Storage</div>
-                <div class="pricingBoxEmails">50 Emails</div>
-                <div class="pricingBoxDomains">30 Domains</div>
-                <div class="pricingBoxBandwidth">10GB Bandwidth</div>
+                <div class="pricingBoxStorage pricingBoxItem">100GB Storage</div>
+                <div class="pricingBoxEmails pricingBoxItem">50 Emails</div>
+                <div class="pricingBoxDomains pricingBoxItem">30 Domains</div>
+                <div class="pricingBoxBandwidth pricingBoxItem">10GB Bandwidth</div>
+                <div class="pricingBoxButton pricingBoxItem">
+                    <button class="pricingBtn">Enroll Now</button>
+                </div>
             </div>
            </div>
            <div class="pricingBox premiumPricingBox">
             <div class="pricingBoxHead">Premium</div>
-            <div class="pricingBoxPrice">$40 / year</div>
+            <div class="pricingBoxPrice">$40</div>
             <div class="pricingBoxItems">
-                <div class="pricingBoxStorage">300GB Storage</div>
-                <div class="pricingBoxEmails">100 Emails</div>
-                <div class="pricingBoxDomains">100 Domains</div>
-                <div class="pricingBoxBandwidth">40GB Bandwidth</div>
+                <div class="pricingBoxStorage pricingBoxItem">300GB Storage</div>
+                <div class="pricingBoxEmails pricingBoxItem">100 Emails</div>
+                <div class="pricingBoxDomains pricingBoxItem">100 Domains</div>
+                <div class="pricingBoxBandwidth pricingBoxItem">40GB Bandwidth</div>
+                <div class="pricingBoxButton pricingBoxItem">
+                    <button class="pricingBtn">Enroll Now</button>
+                </div>
             </div>
            </div>
         </div>
     </section>
 
     <!-- Section4 Contact Section -->
-    <section class="contact">
-        
+    <section class="contact" id="contact">
+         <div class="contactPageHead">Contact <span>Us</span></div>
+         <div class="contactPageMain">
+            <div class="contactPageImage"></div>
+            <div class="contactPageTextContent">
+                <form class="contactForm">
+                    <input type="text" id="name" placeholder="Name">
+                    <input type="email" id="email" placeholder="Email">
+                    <textarea id="message" placeholder="Message"></textarea>
+                    <button class="contactUsBtn">Submit</button>
+                </form>
+            </div>
+         </div>
     </section>
     
     <!-- Footer  -->
@@ -118,10 +142,10 @@
                <div>
                   <h2>Quick Links</h2>
                   <ul>
-                     <li><a href="/"><i class="fa fa-solid fa-chevron-up fa-rotate-90"></i>Home</a></li>
-                     <li><a href="/"><i class="fa fa-solid fa-chevron-up fa-rotate-90"></i>About</a></li>
-                     <li><a href="/"><i class="fa fa-solid fa-chevron-up fa-rotate-90"></i>Pricing</a></li>
-                     <li><a href="/"><i class="fa fa-solid fa-chevron-up fa-rotate-90"></i>Contact</a></li>
+                     <li><a href="#home"><i class="fa fa-solid fa-chevron-up fa-rotate-90"></i>Home</a></li>
+                     <li><a href="#about"><i class="fa fa-solid fa-chevron-up fa-rotate-90"></i>About</a></li>
+                     <li><a href="#pricing"><i class="fa fa-solid fa-chevron-up fa-rotate-90"></i>Pricing</a></li>
+                     <li><a href="#contact"><i class="fa fa-solid fa-chevron-up fa-rotate-90"></i>Contact</a></li>
                   </ul> 
                </div>
            </div>
@@ -147,6 +171,5 @@
             <p>&copy;copyright2023</p>
         </div>
     </footer>
-
 </body>
 </html>

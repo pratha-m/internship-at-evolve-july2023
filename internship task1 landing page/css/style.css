@@ -1,7 +1,9 @@
 *{
     margin: 0;
     padding: 0;
+    scroll-behavior: smooth;
 }
+
 .home{
     height: 80vh;
     width: 100%;
@@ -20,7 +22,7 @@
 .home>.homeSectionContent{
     height: max-content;
     position: relative;
-    left: 100px;
+    left: 50px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -33,7 +35,7 @@
     color: white;
 }
 .home>.homeSectionContent>.homeContent{
-    width: 500px;
+    width:70%;
 }
 .home>.homeSectionContent>.homeBtn{
     height: 50px;

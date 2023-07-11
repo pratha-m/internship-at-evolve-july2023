@@ -28,7 +28,7 @@ footer>.detailsSection>.companySummary>div>h2{
 footer>.detailsSection>div{
     display: flex;
     align-items:center;
-    justify-content: center;
+    /* justify-content: center; */
 }
 footer>.detailsSection>div>div{
     height: 90%;
