@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <div class="quizAppHead">Quiz App</div>
+        <button class="submitQuizBtn" onclick="showSubmitPopup()">Submit Quiz</button>
+    </nav>
+    <section class="QuizAppHome">
+        <div class="quizBoxContainer" id="quizBoxContainer">
+        </div>
+    </section>
+    <div class="submitPopupContainer" id="submitPopupContainer">
+        <button class="crossBtn" onclick="closeSubmitPopup()">X</button>
+        <div class="submitPopup" id="submitPopup">
+           <div class="summitPopupText">Are You Sure You Want To Submit</div>
+           <div class="summitPopupBtns">
+              <button class="yesOption" onclick="submitQuiz()">Yes</button>
+              <button class="noOption" onclick="closeSubmitPopup()">No</button>
+           </div>
+        </div>
+        <div class="resultsPopup" id="resultsPopup">
+            <div class="resultGif"></div>
+            <div class="resultHeading">Results :</div>
+            <div class="resultDetails">
+                <div class="resultTotalQus" id="resultTotalQus">Total:<span></span></div>
+                <div class="resultAttemtedQus" id="resultAttemptedQus">Attempted:<span></span></div>
+                <div class="resultNotAttemptedQus" id="resultNotAttemptedQus">Not Attempted:<span></span></div>
+                <div class="resultCorrectQus" id="resultCorrectQus">Correct:<span></span></div>
+                <div class="resultInCorrectQus" id="resultIncorrectQus">Wrong:<span></span></div>
+            </div> 
+        </div>
+        <div class="resultLoader" id="resultLoader">Generating Results....</div>
+    </div>
+</body>
+<script src="envFile.js"></script>
+<script src="script.js"></script>
+</html>

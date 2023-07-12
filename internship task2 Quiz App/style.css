@@ -1,0 +1,196 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+nav{
+    height: 70px;
+    box-shadow: 1px 1px 3px black;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    width: 100%;
+    top: 0;
+}
+nav>.quizAppHead{
+    font-size: 45px;
+    margin-left: 20px; 
+}
+nav>.submitQuizBtn{
+    height: 40px;
+    width: 100px;
+    border-radius: 50px;
+    border: none;
+    background-color: blue;
+    color: white;
+    cursor: pointer;   
+    margin-right: 30px;
+}
+.QuizAppHome{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 90vh;
+    width: 100%;
+    justify-content: center;
+    height: max-content;
+    position: relative;
+    top: 70px;
+}
+.QuizAppHome>.quizBoxContainer{
+     height: max-content;
+     width: 100%;
+     display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.QuizAppHome>.quizBoxContainer>.quizBox{
+    height: max-content;
+    width: 350px;
+    background-color: white;
+    box-shadow: 1px 1px 5px black;
+    border-radius: 10px;
+}
+.QuizAppHome>.quizBoxContainer>.quizBox>.question{
+    height: max-content;
+    padding: 20px;
+}
+.QuizAppHome>.quizBoxContainer>.quizBox>.options{
+    height:max-content;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.QuizAppHome>.quizBoxContainer>.quizBox>.options>.eachOption{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding:10px 0px;
+    height:max-content;
+    border: 1px solid gray;
+    width:340px;
+    margin-top: 10px;
+    border-radius: 10px;
+}
+.QuizAppHome>.quizBoxContainer>.quizBox>.options>.eachOption>input{
+    margin-left: 5px;
+}
+.QuizAppHome>.quizBoxContainer>.quizBox>.options>.eachOption>label{
+    margin-left: 5px;
+    width: 100%;
+}
+.QuizAppHome>.quizBoxContainer>.quizBox>.options>.eachOptionBtnContainer{
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.QuizAppHome>.quizBoxContainer>.quizBox>.options>.eachOptionBtnContainer>.nextBtn{
+    height: 40px;
+    width: 100px;
+    background-color: green;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 50px;
+}
+.submitPopupContainer{
+    height: 100%;
+    width: 100%;
+    background-color:#0000007d;
+    position: absolute;
+    top: 0;
+    backdrop-filter: blur(5px);
+    display: none;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.submitPopupContainer>.submitPopup{
+    height: 150px;
+    width: 310px;
+    background-color: #847a7a6b;
+    box-shadow: 1px 1px 4px black;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.submitPopupContainer>.crossBtn{
+    top: 70px;
+    right: 60px;
+    position: absolute;
+    font-size: 35px;
+    background-color: transparent;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+.submitPopupContainer>.submitPopup>.summitPopupText{
+    height: 50%;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.submitPopupContainer>.submitPopup>.summitPopupBtns{
+    display: flex;
+    align-items: center;
+    height: 30%;
+    width: 100%;
+    justify-content: space-evenly;
+}
+.submitPopupContainer>.submitPopup>.summitPopupBtns>.yesOption,.noOption{
+    height: 40px;
+    width: 100px;
+    background-color: #6e976e;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 50px;
+}
+.resultsPopup{
+    height: 300px;
+    width: 310px;
+    background-color: #847a7a6b;
+    box-shadow: 1px 1px 4px black;
+    border-radius: 20px;
+    display: none;
+    align-items: center;
+    flex-direction: column;   
+}
+.resultsPopup>.resultHeading{
+    height: 25%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 40px;
+    color: white;
+    font-weight: bold;
+}
+.resultsPopup>.resultDetails{
+    height: 75%;
+    width: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+}
+.resultsPopup>.resultDetails>div{
+    font-size: 22px;
+    color: black;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+.resultsPopup>.resultDetails>div>span{
+    color: white;
+}
+.resultLoader{
+    display: none;
+}
