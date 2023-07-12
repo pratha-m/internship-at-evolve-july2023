@@ -1,4 +1,4 @@
-const apiKey=TOKEN;
+const apiKey="ufbXz9FpLHeSm2oepdH8UinOByxv7lgzCRWRTYI8";
 const noOfQuestions=10;
 let quizBoxContainer=document.getElementById("quizBoxContainer");
 let questions;
