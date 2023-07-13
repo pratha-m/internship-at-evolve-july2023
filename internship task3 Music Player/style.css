@@ -1,0 +1,153 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.playerPage{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #00000085;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.playerPage>.player{
+    min-height: 400px;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgba(16, 16, 17, 0.147);
+    height: max-content;
+    border-radius: 20px;
+    box-shadow: 2px 2px 5px rgb(41, 37, 37);
+    transition: all 3s;
+}
+.playerPage>.player:hover{
+    transform: translateY(-5px);
+    box-shadow: 2px 2px 6px black;
+}
+.playerPage>.player>.songImage{
+    height: 182px;
+    width: 85%;
+    border-radius: 20px;
+    overflow: hidden;
+    margin-top: 15px;
+    box-shadow: 1px 1px 5px black;
+    opacity: 0.8;
+}
+.playerPage>.player>.songImage>img{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    position: relative;
+    transform: translate(0px);
+    transition: all 2s;
+}
+.playerPage>.player>.songName{
+    height: 35px;
+    font-size: 25px;
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    margin-top: 20px;
+    overflow: hidden;
+}
+.playerPage>.player>.songName>p{
+    animation:moveName 7s infinite;
+}
+@keyframes moveName{
+    0%{transform: translateX(-50%);}
+    20%{transform: translateX(-20%);}
+    40%{transform: translateX(20%);}
+    70%{transform: translateX(50%);}
+    100%{transform: translateX(70%);}
+}
+.playerPage>.player>.songArtist{
+    height: 35px;
+    font-size: 25px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    margin-top: 10px;
+}
+.playerPage>.player>.songArtist>p{
+    animation: moveName 4s infinite;
+}
+.playerPage>.player>.songControls{
+    height:max-content;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 20px;
+}
+.playerPage>.player>.songControls>div{
+    height:50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 88%;
+    width: max-content;
+    justify-content: space-evenly;
+}
+.playerPage>.player>.songControls>div>div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: gray;
+    height: 40px;
+    width: 40px;
+    border-radius: 50px;
+    font-size: 20px;
+    cursor: pointer;
+    color: white;
+}
+.playerPage>.player>.songControls>div>span{
+    color: white;
+    width: 36px;
+}
+.playerPage>.player>.songControls>div>div:hover{
+    background-color: rgb(196, 143, 143);
+}
+.playerPage>.player>.songControls>div>.playPauseBtn{
+    height: 50px;
+    width: 50px;
+    font-size: 25px;
+    color: white;
+}
+.playerPage>.player>.songControls>.songSeek>input{
+    width: 195px;
+    height: 5px;
+}
+.playerPage>.player>.songControls>.songSeek{
+   width: 98%;   
+}
+.playerPage>.player>.songControls>.songVolumeSeek>input{
+    height: 5px;
+    width: 160px;
+}
+.playerPage>.player>.songControls>.songVolumeSeek>span{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 17px;
+    background-color: gray;
+    height: 30px;
+    border-radius: 50px;
+    cursor: pointer;
+}
+.playerPage>.player>.songControls>.songVolumeSeek>span:hover{
+    background-color: rgb(196, 143, 143);
+}
+.playerPage>.player>.songControls>.songVolumeSeek>.highVolume{
+    font-size: 15px;
+}
