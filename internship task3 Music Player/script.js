@@ -1,27 +1,33 @@
 let songs=[
     {
-       songName:"Arjit_Singh_Tbg_Astron_Mashup",
-       songArtist:"Arijit Singh",
+       songName:"Eminsessizz_Instagram_Viral_Song.mp3",
+       songArtist:"artist1",
        songImage:"images/image1.jpg",
-       songPath:"audios/Arjit_Singh_Tbg_Astron_Mashup.mp3" 
+       songPath:"audios/Eminsessizz - Instagram Viral Song.mp3" 
     },
     {
-       songName:"Awaaz__7C_Qismat__7C_Ammy_Virk__7C_Sargun_Mehta__7C_Kamal_Khan__7C_Jaani__7C",
-       songArtist:"B Praak",
+       songName:"Instagram_Viral_BGM_Unle.mp3",
+       songArtist:"artist2",
        songImage:"images/image2.jpg",
-       songPath:"audios/Awaaz__7C_Qismat__7C_Ammy_Virk__7C_Sargun_Mehta__7C_Kamal_Khan__7C_Jaani__7C.mp3" 
+       songPath:"audios/Instagram Viral BGM - Unle.mp3" 
     },
     {
-       songName:"Baarish_by_Atif_Aslam__Half_Girlfriend__Arjun_Kapoor_&_Shraddha_Kapoor__Tanishk_Bagchi",
-       songArtist:"Atif Aslam",
+       songName:"Sigma_Rule_Polozhenie_Instagram_Viral_Music.mp3",
+       songArtist:"artist3",
        songImage:"images/image3.jpg",
-       songPath:"audios/Baarish_by_Atif_Aslam__Half_Girlfriend__Arjun_Kapoor_&_Shraddha_Kapoor__Tanishk_Bagchi.mp3" 
+       songPath:"audios/Sigma Rule - Polozhenie ! Instagram Viral Music.mp3" 
     },
     {
-       songName:"Badshah_-_Paagal",
-       songArtist:"Badshah",
+       songName:"Swaha_X_Faded_Instagram_Viral_Song.mp3",
+       songArtist:"artist4",
        songImage:"images/image4.jpg",
-       songPath:"audios/Badshah_-_Paagal(128k).mp3" 
+       songPath:"audios/Swaha X Faded ! Instagram Viral Song.mp3" 
+    },
+    {
+       songName:"Tokyo_Drift_Instagram_Viral_Music.mp3",
+       songArtist:"artist5",
+       songImage:"images/image2.jpg",
+       songPath:"audios/Tokyo Drift - Instagram Viral Music.mp3" 
     }
 ]
 let audioElement=document.createElement("audio");
