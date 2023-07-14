@@ -51,6 +51,16 @@ nav>.submitQuizBtn{
     background-color: white;
     box-shadow: 1px 1px 5px black;
     border-radius: 10px;
+    display: none;
+}
+#quizBoxLoader{
+    display: none;
+}
+#option3Container{
+    display: none;
+}
+#option4Container{
+    display: none;
 }
 .QuizAppHome>.quizBoxContainer>.quizBox>.question{
     height: max-content;

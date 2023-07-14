@@ -13,6 +13,32 @@
     </nav>
     <section class="QuizAppHome">
         <div class="quizBoxContainer" id="quizBoxContainer">
+            <div class="quizBox" id="quizBox">
+                <div class="question" id="question"></div>
+                <div class="options">
+                <div class="eachOption">
+                    <input type="radio" onchange="checkQuestion()" id="option1" name="eachOptionInput">
+                    <label for="option1" id="label1"></label>
+                </div>
+                <div class="eachOption">
+                    <input type="radio" id="option2" onchange="checkQuestion()" name="eachOptionInput">
+                    <label for="option2" id="label2"></label>
+                </div>
+                <div class="eachOption" id="option3Container">
+                    <input type="radio" id="option3" onchange="checkQuestion()" name="eachOptionInput">
+                    <label for="option3" id="label3"></label>
+                </div>
+                <div class="eachOption" id="option4Container">
+                    <input type="radio" id="option4" onchange="checkQuestion()" name="eachOptionInput">
+                    <label for="option4" id="label4"></label>
+                </div>
+                <div class="eachOption eachOptionBtnContainer">
+                     <button class="nextBtn" id="backBtn" onclick="backQuestion(event)">Back</button>
+                     <button class="nextBtn" id="nextBtn" onclick="nextQuestion(event)">Next</button>
+                </div>
+            </div>
+            </div>
+            <div class="quizBoxLoader" id="quizBoxLoader">Loading...</div>
         </div>
     </section>
     <div class="submitPopupContainer" id="submitPopupContainer">
