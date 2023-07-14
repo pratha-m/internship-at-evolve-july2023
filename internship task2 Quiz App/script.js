@@ -110,7 +110,6 @@ function checkQuestion(){
     else{
         clientAnswers.push(clientSelection);
     }
-    console.log(clientAnswers)
 }
 function nextQuestion(e){
     if(start<noOfQuestions-1){
@@ -176,10 +175,7 @@ function renderQuestion(questions,start){
     }
     checkQuestion();
     quizBox.style.display="block";
-    console.log(questions);
-    console.log(questions[start].answers);
-    console.log(start);
-
+    
     if(start==0){
        backBtn.disabled=true;
        backBtn.style.backgroundColor="gray";
