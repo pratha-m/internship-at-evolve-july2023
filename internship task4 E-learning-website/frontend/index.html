@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E learning Website</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/navbar.css">
+    <link rel="stylesheet" href="./css/footer.css">
+    <script src="https://kit.fontawesome.com/ae82594478.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    
+    <!-- Header Section  -->
+    <input type="checkbox" id="expand-toggler">
+    <header class="header">
+        <div class="logoContainer"><a href="/">E Learn</a></div>
+        <label for="expand-toggler" id="expand-btn">
+            <i class="fa fa-solid fa-bars" id="burger-icon"></i>
+            <i class="fa fa-solid fa-times" id="cross-icon"></i>
+        </label>
+        <nav>
+            <ul>
+                <li id="homeLink" onclick="showHomePage()"><span class="active">Home</span></li>
+                <li id="loginLink" onclick="showLoginPage()"><span>Login</span></li>
+                <li id="signupLink" onclick="showSignupPage()"><span>SignUp</span></li>
+                <li id="uploadLink" onclick="showUploadPage()"><span>Upload</span></li>
+                <li id="profileLink" onclick="showProfilePage()"><span>Profile</span></li>
+            </ul>
+        </nav>  
+    </header>
+
+    <div class="changeSection">
+       <section id="homePage">
+           Home Section
+       </section>
+
+       <section id="loginPage">login Section</section>
+
+       <section id="signUpPage">Signup Section</section>
+
+       <section id="profilePage">Profile Section</section>
+
+       <section id="uploadPage">Upload Section</section>
+    </div>
+
+    <!-- Footer  -->
+    <footer>
+        <div class="detailsSection">
+           <div class="companySummary">
+                <div>
+                 <h2>Landing Page</h2>
+                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. OptioLorem ipsum dolor sit amet consectetur adipisicing elit. OptioLorem ipsum dolor sit amet consectetur adipisicing elit. Optio </p>
+                </div>
+           </div>
+           <div class="quickLinks">
+               <div>
+                  <h2>Quick Links</h2>
+                  <ul>
+                     <li><a href="#home"><i class="fa fa-solid fa-chevron-up fa-rotate-90"></i>Home</a></li>
+                     <li><a href="#about"><i class="fa fa-solid fa-chevron-up fa-rotate-90"></i>About</a></li>
+                     <li><a href="#pricing"><i class="fa fa-solid fa-chevron-up fa-rotate-90"></i>Pricing</a></li>
+                     <li><a href="#contact"><i class="fa fa-solid fa-chevron-up fa-rotate-90"></i>Contact</a></li>
+                  </ul> 
+               </div>
+           </div>
+           <div class="contactDetails">
+                <div>
+                   <h2>Contact Info</h2>
+                   <span><i class="fa fa-solid fa-phone"></i>91+XXXXXXX</span>
+                   <span><i class="fa fa-solid fa-envelope"></i>email23@gmail.com</span>
+                   <span><i class="fa fa-solid fa-globe"></i>punjab,India-140401</span>
+                   <span class="socialLinks">
+                    <ul>
+                        <li><a href="/" class="eachSocialLink"><i class="fa fa-brands fa-github"></i></a></li>
+                        <li><a href="/" class="eachSocialLink"><i class="fa fa-brands fa-linkedin"></i></a></li>
+                        <li><a href="/" class="eachSocialLink"><i class="fa fa-brands fa-twitter"></i></a></li>
+                        <li><a href="/" class="eachSocialLink"><i class="fa fa-brands fa-instagram"></i></a></li>
+                        <li><a href="/" class="eachSocialLink"><i class="fa fa-brands fa-codepen"></i></a></li>
+                    </ul>
+                   </span>
+                </div>
+           </div>
+        </div>
+        <div class="copyrightSection">
+            <p>&copy;copyright2023</p>
+        </div>
+    </footer>
+    <script src="js/script.js"></script>
+</body>
+</html>

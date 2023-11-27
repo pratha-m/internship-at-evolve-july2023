@@ -118,7 +118,6 @@ function loadVolume(){
     else{
         highVolumeSpan.style.backgroundColor="gray";
     }
-    // console.log(audioElement.currentTime);
 }
 function changeTime(event){
     let totalSeconds=audioElement.duration.toFixed(2); 

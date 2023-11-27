@@ -1,0 +1,43 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+section{
+    height: 90vh;
+    min-width:100%;
+}
+.changeSection{
+    width: 100%;
+    background-color: rgb(141, 123, 123);
+    display: flex;
+    height: max-content;
+    padding-top: 70px;
+}
+#homePage{
+    background-color: gray;
+    display:flex;
+}
+#loginPage{
+    background-color: red;
+    display: none;
+}
+#signUpPage{
+    background-color: brown;
+    display: none;
+}
+#profilePage{
+    background-color: blue;
+    display: none;
+}
+#uploadPage{
+    background-color: pink;
+    display: none;
+}
+.active{
+    border-style:none none solid none;
+    border-color: orange;
+    padding-bottom: 5px;
+    border-width: 4px;
+    color: white;
+}
+
